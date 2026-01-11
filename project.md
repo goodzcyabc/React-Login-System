@@ -1,24 +1,71 @@
-# React登陆注册系统
+# React Login & Registration System
 
-## 前端：技术栈(全家桶)
-React + React-Router + Redux + thunk + BootStrap + Axios + 第三方
+A full-stack login + registration demo using React (frontend) and Node.js (backend), supporting validation, token-based authentication, and cross-environment workflows.
 
-## 后端：数据处理
-Nodejs + Express + MySQL + XAMPP + 第三方
+---
 
-## 跨域的处理方案
-1. cors(后台)
-2. proxy(前台)
+## Frontend Tech Stack
 
-## 环境差异
-1. 开发环境:我们编写代码的环境
-    proxy:开发环境下的跨域
-2. 生产环境:浏览器的执行环境
-3. 测试环境:测试人员在其上做相关的操作，响应bug
+Uses the full “React ecosystem”:
 
-## 项目功能
-1. 注册功能 -> 注册验证(后台)
-2. 消息提示框 -> redux
-3. 登陆功能 -> 登陆验证(前台)
-4. token认证 -> 存储：redux/本地
-5. token流程
+- React
+- React Router
+- Redux
+- Redux Thunk
+- Bootstrap
+- Axios
+- Third-party libraries (e.g. classnames, validator, etc.)
+
+---
+
+## Backend Tech Stack
+
+Data handling and API services:
+
+- Node.js
+- Express
+- MySQL
+- XAMPP (MySQL / Apache management)
+- Additional third-party middleware/packages
+
+---
+
+## Cross-Origin (CORS) Handling
+
+Two approaches:
+
+1. **CORS on backend**  
+   - Using middleware like `cors`
+2. **Proxy on frontend**  
+   - Using `proxy` configuration in development
+
+---
+
+## Environment Differences
+
+Understanding environments and behavior differences:
+
+1. **Development Environment**  
+   - Where code is written and tested locally  
+   - Proxy-based CORS handling applies here
+2. **Production Environment**  
+   - Browser execution environment after deployment
+3. **Testing Environment**  
+   - Used for QA testing and bug validation
+
+---
+
+## Core Features
+
+1. **Registration**
+   - Backend validation
+   - Database persistence
+2. **Message Notification**
+   - Managed through Redux
+   - Used for user feedback
+3. **Login**
+   - Frontend validation
+   - Error feedback and UI state
+4. **Token Authentication**
+   - Token stored in Redux and/or local storage
+5. **Token Workflow**
